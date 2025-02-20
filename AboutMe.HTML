@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About Our Final Project</title>
+    <link rel="stylesheet" href="AboutMe.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <section class="about-us">
+        <div class="about">
+            <img src="MyPIC.PNG" class="pic" alt="My Picture" /> 
+            <div class="text">
+                <h2>About Our Final Project</h2>
+                <h5>DUAR Ticket <span> [Alrismany Abigail Sudjarwo]</span></h5>
+                <p>Our final project will be using Citilink's official website and improving its system for ordering tickets, making it easier for people to purchase them.</p>
+                <div class="data">
+                    <a href="Alris.html" class="about-myself" target="_blank">About My Self</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const images = [
+            "citilink1.JPEG",
+            "citilink2.JPEG",
+            "citilink3.JPEG",
+            "citilink4.JPG"
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackground() {
+            document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        setInterval(changeBackground, 5000);
+        changeBackground();
+    </script>
+</body>
+</html>
