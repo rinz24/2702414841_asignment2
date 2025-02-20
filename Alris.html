@@ -14,6 +14,7 @@
             background: linear-gradient(135deg, #ffd6e0, #ffebd6, #d6ffd6, #d6f3ff, #e6d6ff);
             background-size: 400% 400%;
             animation: gradientAnimation 10s ease infinite;
+            text-align: center;
         }
 
         @keyframes gradientAnimation {
@@ -41,6 +42,7 @@
             margin-bottom: 20px;
             padding: 15px;
             border-radius: 10px;
+            text-align: left;
         }
 
         .event {
@@ -81,6 +83,26 @@
             object-fit: cover;
             border: 4px solid white;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #ff8c94;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #ff5a66;
+            transform: scale(1.05);
         }
 
     </style>
@@ -127,5 +149,8 @@
             <p class="note">Note: Some of the photographs and designs I have taken or made were created under the ownership of an organization or company. As a result, I am unable to provide direct links or share them independently, as they are credited to the organization rather than my name.</p>
         </div>
     </div>
+
+    <!-- Go Back Button -->
+    <a href="AboutMe.html" class="back-button">⬅ Go Back</a>
 </body>
 </html>
